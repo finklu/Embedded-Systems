@@ -156,3 +156,146 @@ Finished building target: "es_lab2.out"
 gmake[1]: 'es_lab2.out' is up to date.
 
 **** Build Finished ****
+
+**** Clean-only build of configuration Debug for project es_lab3 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "es_lab3.out" 
+DEL /F "main.obj" "HAL\hal_general.obj" "HAL\hal_gpio.obj" "HAL\hal_pmm.obj" "HAL\hal_wdt.obj" 
+DEL /F "main.d" "HAL\hal_general.d" "HAL\hal_gpio.d" "HAL\hal_pmm.d" "HAL\hal_wdt.d" 
+C:\es_crazycar_workspace\es_lab3\Debug\es_lab3.out konnte nicht gefunden werden
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab3 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 48: warning #179-D: variable "c" was declared but never referenced
+"../main.c", line 52: warning #179-D: variable "f" was declared but never referenced
+"../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 40: remark #1535-D: (ULP 8.1) variable "a" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 41: remark #1535-D: (ULP 8.1) variable "b" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 43: remark #1535-D: (ULP 8.1) variable "d" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 44: remark #1535-D: (ULP 8.1) variable "e" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 52 (col. 15): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building file: "../HAL/hal_general.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_general.d_raw" --obj_directory="HAL"  "../HAL/hal_general.c"
+Finished building: "../HAL/hal_general.c"
+ 
+Building file: "../HAL/hal_gpio.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+"../HAL/hal_gpio.c", line 69: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../HAL/hal_gpio.c", line 75: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+Finished building: "../HAL/hal_gpio.c"
+ 
+Building file: "../HAL/hal_ucs.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_ucs.d_raw" --obj_directory="HAL"  "../HAL/hal_ucs.c"
+"../HAL/hal_ucs.c", line 12: remark #1528-D: (ULP 3.1) Detected flag polling using SFRIFG1. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_ucs.c"
+ 
+Building file: "../HAL/hal_timerB0.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_timerB0.d_raw" --obj_directory="HAL"  "../HAL/hal_timerB0.c"
+"../HAL/hal_timerB0.c", line 28: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../HAL/hal_timerB0.c", line 34: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+Finished building: "../HAL/hal_timerB0.c"
+ 
+Building file: "../HAL/hal_pmm.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_pmm.d_raw" --obj_directory="HAL"  "../HAL/hal_pmm.c"
+"../HAL/hal_pmm.c", line 91: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 100: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 115: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 122: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 127: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 163: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 173: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_pmm.c"
+ 
+Building file: "../HAL/hal_wdt.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_wdt.d_raw" --obj_directory="HAL"  "../HAL/hal_wdt.c"
+Finished building: "../HAL/hal_wdt.c"
+ 
+Building target: "es_lab3.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_lab3.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_lab3_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_lab3.out" "./main.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_lab3.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab3 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 48: warning #179-D: variable "c" was declared but never referenced
+"../main.c", line 52: warning #179-D: variable "f" was declared but never referenced
+"../main.c", line 54: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 40: remark #1535-D: (ULP 8.1) variable "a" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 41: remark #1535-D: (ULP 8.1) variable "b" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 43: remark #1535-D: (ULP 8.1) variable "d" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 44: remark #1535-D: (ULP 8.1) variable "e" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 52 (col. 15): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../main.c"
+ 
+Building target: "es_lab3.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_lab3.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_lab3_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_lab3.out" "./main.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_lab3.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab3 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab3" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 18: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building target: "es_lab3.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_lab3.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_lab3_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_lab3.out" "./main.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_lab3.out"
+ 
+
+**** Build Finished ****

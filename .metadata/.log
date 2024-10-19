@@ -858,3 +858,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstud
 
 !ENTRY org.eclipse.ui 2 2 2024-10-19 21:25:35.949
 !MESSAGE com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-19 21:28:40.192
+!MESSAGE Indexed 'es_lab3' (5 sources, 9 headers) in 0,141 sec: 830 declarations; 1 404 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0 %)
