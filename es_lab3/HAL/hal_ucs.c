@@ -4,7 +4,7 @@
 void HAL_UCS_Init()
 {
     UCSCTL6 &= ~XT2OFF;                                          // activate XT2 (dont turn off)
-    UCSCTL6 &= XT2BYPASS;                                        // sourced from external crystal
+    UCSCTL6 &= ~XT2BYPASS;                                        // sourced from external crystal
 
     UCSCTL3 |= SELREF_2;                                         // FLL (frequency-locked loop) on REFOCLK (Reference Clock)
     UCSCTL4 |= SELA_2;                                           // ACLK (Auxillary clock) on REFOCLK

@@ -55,7 +55,6 @@ void HAL_GPIO_Init()
  // #####   PORT9   #####
   P9DIR |= LCD_RESET + DISTANCE_RIGHT_EN;                               //outputs
 
-   __enable_interrupt();
 }
 
 

@@ -15,5 +15,6 @@ void HAL_Init(void)
     HAL_PMM_Init();
     HAL_GPIO_Init();
     HAL_UCS_Init();
+    __enable_interrupt();
     HAL_TimerB0_Init();
 }

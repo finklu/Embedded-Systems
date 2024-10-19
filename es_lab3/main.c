@@ -10,39 +10,30 @@
 extern ButtonCom CCButton;
 extern TimerB0struct CCoperate;
 
-void timerB0(void);
+void button(void);
 
 void main(void)
 {
     HAL_Init();
     while(1)
     {
-     //timerB0();
-/*
-     if(CCButton.active)
-     {
-         switch(CCButton.button)
-         {
-         case START_BUTTON: LCD_BL_ON;
-         break;
-         case STOP_BUTTON: LCD_BL_OFF;
-         break;
-         }
-     }
-*/
+     //button();
+
+
     }
 
 }
 
-void timerB0(void)
+
+void button(void)
 {
-    if(CCoperate.active)
+    if(CCButton.active)
     {
-        switch(CCoperate.state)
+        switch(CCButton.button)
         {
-            case 1: LCD_BL_ON;
+            case START_BUTTON: LCD_BL_ON;
             break;
-            case 2: LCD_BL_OFF;
+            case STOP_BUTTON: LCD_BL_OFF;
             break;
         }
     }
