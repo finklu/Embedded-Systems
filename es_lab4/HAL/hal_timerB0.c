@@ -13,7 +13,7 @@ void HAL_TimerB0_Init(void)
     TB0EX0 |= TBIDEX_2;                    // smclk additionally divided by 3
     TB0CCTL0 |= CCIE;
 
-    TB0CCR0 |= 0xCB73;                     // (2,5 MHz / 24) * 0,5 = 52083 ## count to 0.5s
+    TB0CCR0 |= 0x65BA;                     // (2,5 MHz / 24) * 0,5 = 52083 ## count to 0.5s
     __bis_SR_register(GIE);
 }
 
