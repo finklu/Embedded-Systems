@@ -1,6 +1,9 @@
 #include <HAL/hal_timerA.h>
 #include <msp430.h>
+#include <stdint.h>
 
+volatile uint32_t speed = 0;
+static volatile uint16_t hall_ticks = 0;
 
 void HAL_TimerA_Init(void)
 {
@@ -22,13 +25,35 @@ void HAL_TimerA_Init(void)
 
 
   // #######    TimerA0    #########
-  TA0CTL |= 0x00;                           //Control Register, init state
-  TA0CTL |= TASSEL_2 + ID_2;                //source select SMCLK + input source divider /4
+  TA0CCTL2 |= 0x00;                         //Capture/Compare register init state
+  TA0CCTL2 |= CAP + CM_3 + SCS;             //enable capture mode + both edges + synchronize capture source to timer clock
+  TA0CCTL2 |= CCIS_0 + CCIE;                //capture input from pin + interrupt enable
 
-  TA0CCTL0 |= CCIE;
-  TA0CCTL1 |= CAP + CM_3;
   TA1CCR0 = 62500;                          //10Hz
 
-  TA0CTL |= MC_1;                           //up-mode selected
+  TA0CTL |= 0x00;                           //Control Register, init state
+  TA0CTL |= TASSEL_2 + ID_2;                //source select SMCLK + input source divider /4
+  TA0CTL |= MC_2 + TACLR;                   //up-mode selected + start timer
 
 }
+
+#pragma vector = TIMER0_A1_VECTOR
+__interrupt void TimerA0_CCR2(void)
+{
+    if(TA0CCTL2 & CCIFG)
+    {
+        hall_ticks++;
+    }
+}
+
+#pragma vector = TIMER0_A0_VECTOR
+__interrupt void TimerA0_CCR0(void)
+{
+    static uint32_t speed_old = 0;
+
+    uint32_t speed = (hall_ticks * PERIOD + speed_old)>>1;
+    speed_old = speed;
+
+    hall_ticks = 0;
+}
+
