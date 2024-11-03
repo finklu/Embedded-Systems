@@ -5,7 +5,7 @@
 #include "hal_gpio.h"
 #include "hal_ucs.h"
 #include "hal_timerB0.h"
-#include "hal_timerA1.h"
+#include "hal_timerA.h"
 
 ButtonCom CCButton;
 TimerB0struct CCoperate;
@@ -18,5 +18,5 @@ void HAL_Init(void)
     HAL_UCS_Init();
     __enable_interrupt();
     HAL_TimerB0_Init();
-    HAL_TimerA1_Init();
+    HAL_TimerA_Init();
 }

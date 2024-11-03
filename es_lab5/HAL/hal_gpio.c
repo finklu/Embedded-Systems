@@ -18,6 +18,7 @@ void HAL_GPIO_Init()
   P1IES &= ~(START_BUTTON + STOP_BUTTON);                               //edge select: rise
   P1REN |= START_BUTTON + STOP_BUTTON;                                  //resistor enable
   P1OUT |= START_BUTTON + STOP_BUTTON;                                  //pull-up resistor
+  P1SEL |= RPM_SENSOR;                                                  //activate module TA0.2
 
  // #####   PORT2   #####
   P2DIR &= ~(DEBUG_TXD + AUX_PIN_1 + AUX_PIN_2 + AUX_PIN_3 +

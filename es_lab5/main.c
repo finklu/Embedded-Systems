@@ -4,6 +4,8 @@
 #include "HAL/hal_gpio.h"
 #include "HAL/hal_timerB0.h"
 #include "DL/driver_general.h"
+#include "DL/driver_aktorik.h"
+#include "DL/driver_measurement.h"
 
 #define LCD_BL_ON P8OUT |= LCD_BL
 #define LCD_BL_OFF P8OUT &= ~LCD_BL
@@ -21,12 +23,16 @@ void main(void)
     Driver_Init();
     while(1)
     {
+       Driver_SetThrottle(20);
+       Driver_SpeedMeasurement();
+
+        /*
         if(CCButton.active)
            {
                switch(CCButton.button)
                {
                    case START_BUTTON:
-                   Driver_SetThrottle(100);
+                   Driver_SetThrottle(20);
                    CCButton.active = 0;
                    break;
 
@@ -37,7 +43,7 @@ void main(void)
                    break;
                }
            }
-
+        */
     }
 
 }
