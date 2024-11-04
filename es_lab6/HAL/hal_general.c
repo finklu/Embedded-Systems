@@ -11,7 +11,7 @@
 ButtonCom CCButton;
 TimerB0struct CCoperate;
 
-USCIB1_SPICom SPIData;
+USCIB1_SPICom SPI_LCD_Data;
 
 void HAL_Init(void)
 {
