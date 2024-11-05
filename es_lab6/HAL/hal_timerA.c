@@ -43,6 +43,7 @@ __interrupt void TimerA0_CCR2(void)
     if(TA0CCTL2 & CCIFG)
     {
         hall_ticks++;
+        TA0CCTL2 &= ~CCIFG;
     }
 }
 
@@ -51,7 +52,7 @@ __interrupt void TimerA0_CCR0(void)
 {
     static uint32_t speed_old = 0;
 
-    uint32_t speed = (hall_ticks * PERIOD + speed_old)>>1;
+    uint32_t speed = (hall_ticks * TICK_DISTANCE * PERIOD + speed_old)>>1; // (Ticks*5mm)*10[1/s] average of last 2 measurement
     speed_old = speed;
 
     hall_ticks = 0;
