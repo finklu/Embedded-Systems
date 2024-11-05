@@ -22,7 +22,7 @@ void HAL_USCIB1_Init(void)
    SPI_LCD_Data.Status.TxSuc = 1;
 }
 
-void HAL_USCIB1_Transmit()
+void HAL_USCIB1_Transmit(void)
 {
     SPI_LCD_Data.TxData.cnt = 0;
     SPI_LCD_Data.Status.TxSuc = 0;
@@ -34,18 +34,17 @@ void HAL_USCIB1_Transmit()
 __interrupt void USCIB1(void)
 {
 
- if(UCB1IE & UCRXIE)
+ if(UCB1IFG & UCRXIFG)
  {
      LCD_CS_HIGH;                               //cancel CS
-     SPI_LCD_Data.RxData.Data[SPI_LCD_Data.TxData.cnt] = UCB1RXBUF;
+     SPI_LCD_Data.RxData.Data[SPI_LCD_Data.TxData.cnt++] = UCB1RXBUF;
      SPI_LCD_Data.RxData.len++;
-     SPI_LCD_Data.TxData.cnt++;
 
      if(SPI_LCD_Data.TxData.cnt > (SPI_LCD_Data.TxData.len-1))
      {
+         SPI_LCD_Data.Status.TxSuc = 1;         // communication complete
          SPI_LCD_Data.TxData.cnt = 0;
          SPI_LCD_Data.TxData.len = 0;
-         SPI_LCD_Data.Status.TxSuc = 1;         // communication complete
      }
      else
      {
