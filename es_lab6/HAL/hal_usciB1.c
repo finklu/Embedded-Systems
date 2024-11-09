@@ -33,7 +33,7 @@ void HAL_USCIB1_Transmit(void)
 #pragma vector = USCI_B1_VECTOR
 __interrupt void USCIB1(void)
 {
-
+UCB1IFG &=  ~ UCTXIFG;
  if(UCB1IFG & UCRXIFG)
  {
      LCD_CS_HIGH;                               //cancel CS
