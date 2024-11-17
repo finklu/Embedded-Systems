@@ -25,12 +25,14 @@ void main(void)
            {
                switch(CCButton.button)
                {
-                   case START_BUTTON: Driver_SetSteering(100);
+                   case START_BUTTON:
+                   Driver_SetSteering(100);
                    CCButton.active = 0;
                    break;
 
 
-                   case STOP_BUTTON: Driver_SetSteering(-100);
+                   case STOP_BUTTON:
+                   Driver_SetSteering(-100);
                    CCButton.active = 0;
                    break;
                }

@@ -22,33 +22,33 @@ void button(void);
 void main(void)
 {
     HAL_Init();
+    Driver_Init();
+    /*
     SPIData.TxData.len = 3;
     SPIData.TxData.Data[0] = 0xAA;
     SPIData.TxData.Data[1] = 0xBB;
     SPIData.TxData.Data[2] = 0xCC;
     HAL_USCIB1_Transmit();
+    */
     while(1)
-    {
-
-        /*
-        if(CCButton.active)
-           {
-               switch(CCButton.button)
-               {
-                   case START_BUTTON:
-                   Driver_SetThrottle(20);
-                   CCButton.active = 0;
-                   break;
+       {
+           if(CCButton.active)
+              {
+                  switch(CCButton.button)
+                  {
+                      case START_BUTTON:
+                      Driver_SetSteering(100);
+                      CCButton.active = 0;
+                      break;
 
 
-                   case STOP_BUTTON:
-                   Driver_SetThrottle(0);
-                   CCButton.active = 0;
-                   break;
-               }
-           }
-        */
-    }
+                      case STOP_BUTTON:
+                      Driver_SetSteering(-100);
+                      CCButton.active = 0;
+                      break;
+                  }
+              }
+       }
 
 }
 
