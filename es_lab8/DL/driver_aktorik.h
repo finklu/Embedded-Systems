@@ -8,6 +8,7 @@
 
 #define MAX_RPW 2500            //1000us  max backward
 #define MIN_RPW 5000            //2000us  min backward
+#define MAXBREAK 6250
 #define MIN_FPW 7500            //3000us  min forward
 #define MAX_FPW 10000           //4000us  max forward
 #define STEP_SIZE_THROTTLE 25   //(MAX_FPW-MIN_FPW)/100

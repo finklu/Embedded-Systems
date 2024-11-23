@@ -56,7 +56,7 @@ void Driver_ESCInit(void)
     pulseCreation(MIN_FPW, 128);         //Min. Forward
     pulseCreation(MAX_FPW, 128);
 
-    pulseCreation(6000, 30);            //>MinRPW <MINFWP Kablibrierung abgeschlossen
+    pulseCreation(MAXBREAK, 30);            //>MinRPW <MINFWP Kablibrierung abgeschlossen
 
 }
 

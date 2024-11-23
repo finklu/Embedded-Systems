@@ -10,8 +10,9 @@ unsigned char LCD_Pos_Array[];
 void Driver_LCD_Init(void)
 {
   LCD_BL_ON;
+  __delay_cycles(100000);
   P9OUT = (P9OUT & ~LCD_RESET_PIN);     //Reset Line LOW
-  __delay_cycles(500000);           //Wait for Display
+  __delay_cycles(500000);               //Wait for Display
   P9OUT = (P9OUT | LCD_RESET_PIN);      //Reset Line HIGH
 
  unsigned char LCD_Init_Array[9] = {
@@ -25,23 +26,19 @@ void Driver_LCD_Init(void)
    POWER_CONT,
    DISPLAY_ON };
 
+
  Driver_LCD_WriteCommand(LCD_Init_Array , 9);
  while(SPI_LCD_Data.Status.TxSuc == 0);
 
  Driver_LCD_Clear();                            // lcd alle pixel löschen
  while(SPI_LCD_Data.Status.TxSuc == 0);
 
+ /* Test
  Driver_LCD_WriteText("v in mm/s=", 11, 0,0);
  Driver_LCD_WriteUInt(4203,0,70);
-/*
- Driver_LCD_WriteText("DAS", 4, 1,0);
- Driver_LCD_WriteText("IST", 4, 2,0);
- Driver_LCD_WriteText("EIN", 4, 3,0);
- Driver_LCD_WriteText("TEST", 5, 4,0);
 
-Driver_LCD_WriteUInt(117,5,0);
-*/
  while(SPI_LCD_Data.Status.TxSuc == 0);
+*/
 
 }
 
