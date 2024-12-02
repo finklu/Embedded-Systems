@@ -13145,3 +13145,806 @@ Finished building target: "es_lab9.out"
 gmake[1]: 'es_lab9.out' is up to date.
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project es_lab8 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab8" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "es_lab8.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_lab8.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_lab8_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_lab8.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab8 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab8" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "es_lab8.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_lab8.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_lab8_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_lab8.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab8 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab8 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 34: error #137: struct "<unnamed>" has no field "SensorRight"
+"../main.c", line 37: error #137: struct "<unnamed>" has no field "SensorLeft"
+"../main.c", line 40: error #137: struct "<unnamed>" has no field "SensorFront"
+"../main.c", line 43: error #137: struct "<unnamed>" has no field "VBat"
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+ 
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_dma.obj' failed
+"../HAL/hal_dma.c", line 13: error #66: expected a ";"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+1 error detected in the compilation of "../HAL/hal_dma.c".
+gmake: *** [HAL/hal_dma.obj] Error 1
+Building file: "../HAL/hal_general.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_general.d_raw" --obj_directory="HAL"  "../HAL/hal_general.c"
+Finished building: "../HAL/hal_general.c"
+ 
+Building file: "../HAL/hal_usciB1.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_usciB1.d_raw" --obj_directory="HAL"  "../HAL/hal_usciB1.c"
+"../HAL/hal_usciB1.c", line 32: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_usciB1.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+ 
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_dma.obj' failed
+"../HAL/hal_dma.c", line 13: error #66: expected a ";"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+1 error detected in the compilation of "../HAL/hal_dma.c".
+gmake: *** [HAL/hal_dma.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #173-D: invalid type conversion
+"../HAL/hal_dma.c", line 18: warning #173-D: invalid type conversion
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+ 
+>> Compilation failure
+HAL/subdir_rules.mk:9: recipe for target 'HAL/hal_dma.obj' failed
+"../HAL/hal_dma.c", line 17: error #160: expression must be an lvalue or a function designator
+"../HAL/hal_dma.c", line 18: error #160: expression must be an lvalue or a function designator
+2 errors detected in the compilation of "../HAL/hal_dma.c".
+gmake: *** [HAL/hal_dma.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab8 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_lab8.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_lab8 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_usciB1.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_lab8" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_usciB1.d_raw" --obj_directory="HAL"  "../HAL/hal_usciB1.c"
+"../HAL/hal_usciB1.c", line 29: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_usciB1.c"
+ 
+Building target: "es_lab8.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_lab8.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_lab8_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_lab8.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_lab8.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short (*)[4]" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 17: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 18: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 20: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 21: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 20: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 21: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+Finished building: "../HAL/hal_dma.c"
+ 
+Building file: "../HAL/hal_timerA.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_timerA.d_raw" --obj_directory="HAL"  "../HAL/hal_timerA.c"
+Finished building: "../HAL/hal_timerA.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../DL/driver_general.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="DL/driver_general.d_raw" --obj_directory="DL"  "../DL/driver_general.c"
+Finished building: "../DL/driver_general.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../DL/driver_lcd.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labA" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="DL/driver_lcd.d_raw" --obj_directory="DL"  "../DL/driver_lcd.c"
+"../DL/driver_lcd.c", line 13: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 15: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 31: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 34: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 40: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 43: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 52: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 66: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 77: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 83: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "PDOUT_H" within a loop. Recommend using lower 4 bits to allow use of constant generators
+"../DL/driver_lcd.c", line 85: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 101: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 105: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 108: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 117: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 134: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../DL/driver_lcd.c", line 134: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../DL/driver_lcd.c", line 135: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../DL/driver_lcd.c"
+ 
+Building target: "es_labA.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labA.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labA_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labA.out" "./main.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labA.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labA ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labA.out' is up to date.
+
+**** Build Finished ****

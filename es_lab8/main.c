@@ -35,13 +35,13 @@ void main(void)
 
 
                            case STOP_BUTTON:
-                               Driver_SetThrottle(-50);
+                               Driver_SetThrottle(100);
                                CCButton.active = 0;
                            break;
                        }
                    }
             Driver_LCD_WriteText("v in mm/s =",12,0,0);
-            Driver_LCD_WriteUInt(Measure_Hall_Data.speed,0,70);
+            Driver_LCD_WriteUInt(Measure_Hall_Data.speed,0,90);
 
     }
 }
