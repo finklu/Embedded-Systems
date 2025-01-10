@@ -21,7 +21,7 @@ extern ADC12Com ADC12_Data;
 void button(void);
 
 void main(void)
-{
+      {
     HAL_Init();
     Driver_Init();
     int i =0;
