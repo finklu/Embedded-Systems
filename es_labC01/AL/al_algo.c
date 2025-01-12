@@ -12,7 +12,7 @@ short steeringValue = 0;
 
 void AL_PARAMETER_Init()
 {
-    parameters.steer.kp = 0.11;
+    parameters.steer.kp = 0.09;
     parameters.steer.ki = 0;
     parameters.steer.kd = 0.05;
     parameters.steer.esum = 0;
@@ -26,6 +26,12 @@ void AL_PARAMETER_Init()
     Status.Count.rounds = 0;
     Status.start = 0;
     Status.refreshRate = 0;
+
+    parameters.throttle.kp = 1;
+    parameters.throttle.ki = 0;
+    parameters.throttle.kd = 0.04;
+    parameters.throttle.esum = 0;
+    parameters.throttle.ta = 0.1;
 }
 
 void AL_SteerControl()
@@ -37,8 +43,8 @@ void AL_SteerControl()
      }
 
    parameters.steer.y = (parameters.steer.kp *parameters.steer.e);                                               // P-Anteil
-   parameters.steer.y +=parameters.steer.ki *parameters.steer.ta *parameters.steer.esum;                         // I-Anteil
-   parameters.steer.y +=parameters.steer.kd * (parameters.steer.e -parameters.steer.eold) /parameters.steer.ta;  // D-Anteil
+   parameters.steer.y += parameters.steer.ki *parameters.steer.ta *parameters.steer.esum;                         // I-Anteil
+   parameters.steer.y += parameters.steer.kd * (parameters.steer.e -parameters.steer.eold) /parameters.steer.ta;  // D-Anteil
 
    parameters.steer.eold =parameters.steer.e;
 
@@ -53,19 +59,61 @@ void AL_SteerControl()
 
 void AL_SpeedControl()
 {
-    short throttleValue = 0;
+
+
+    parameters.throttle.e = Status.throttle.throttleValue - Measure_Hall_Data.speed / 40;
+
+    parameters.throttle.y = (parameters.throttle.kp *parameters.throttle.e);                                               // P-Anteil
+    parameters.throttle.y +=parameters.throttle.ki *parameters.throttle.ta *parameters.throttle.esum;                         // I-Anteil
+    parameters.throttle.y +=parameters.throttle.kd * (parameters.throttle.e -parameters.throttle.eold) /parameters.throttle.ta;  // D-Anteil
+
+    parameters.throttle.eold =parameters.throttle.e;
+
+    Driver_SetThrottle(parameters.throttle.y);
+
+}
+void AL_SpeedCalculation()
+{
+    Status.throttle.throttleValue = 0;
+
     switch(Status.Steer.currState) {
     case FORWARD:
-        throttleValue = 60;//SPEED_FORWARD;
+
+        if(ADC12_Data.SensorFront>=1500)
+        {
+            Status.throttle.throttleValue = 65;
+        }
+        else if(ADC12_Data.SensorFront < 1500 && ADC12_Data.SensorFront > 800)
+        {
+            Status.throttle.throttleValue = 55;
+        }
+        else if(ADC12_Data.SensorFront <= 800)
+        {
+            //Status.throttle.throttleValue = 40;
+            Status.throttle.throttleValue = 40 - ADC12_Data.SensorFront / 200;
+        }
         break;
     case LEFT:
-        throttleValue = 40;
+        Status.throttle.throttleValue = 45;
         break;
     case RIGHT:
-        throttleValue = 40;
+        Status.throttle.throttleValue = 45;
         break;
     }
-    Driver_SetThrottle(throttleValue);
+
+    /*
+    if(ADC12_Data.SensorFront >= 1500)
+    {
+        Status.throttle.throttleValue = 65;
+    }
+    else
+    {
+        Status.throttle.throttleValue = 65 - (ADC12_Data.SensorFront / 30);
+    }
+    */
+    Driver_SetThrottle(Status.throttle.throttleValue);
+
+
 }
 
 void AL_DetermineCurve()
@@ -128,7 +176,7 @@ void AL_ShowDisplay()
        {
             ADC12_Data.Status.B.ADCrdy = 0;
             Driver_LCD_WriteText("v in mm/s =",12,0,0);
-            Driver_LCD_WriteUInt(Measure_Hall_Data.speed,0,70);
+            Driver_LCD_WriteUInt(Measure_Hall_Data.speed,0,90);
 
             Driver_LCD_WriteText("Distance(R)=",13,2,0);
             Driver_LCD_WriteUInt(ADC12_Data.SensorRight,2,70);
@@ -141,6 +189,10 @@ void AL_ShowDisplay()
 
             Driver_LCD_WriteText("VBat in mV=",12,5,0);
             Driver_LCD_WriteUInt(ADC12_Data.ADCBuffer[3],5,70);
+
+            Driver_LCD_WriteText("Kurve=",12,6,0);
+            Driver_LCD_WriteUInt(Status.Steer.currCurve,6,70);
+
             Status.refreshRate = 0;
        }
        else {
@@ -154,17 +206,19 @@ void AL_ShowDisplay()
 void AL_Algorithm()
 {
     AL_SteerControl();
+    Status.Steer.align = -200;
 
     short sens_diff = ADC12_Data.SensorRight - ADC12_Data.SensorLeft;
     short sens_sum = ADC12_Data.SensorRight + ADC12_Data.SensorLeft;
 
     switch(Status.Steer.currState) {
         case FORWARD:
-            if(sens_diff < -GOOD_ZONE && ADC12_Data.SensorLeft > 750) {
+
+           if(ADC12_Data.SensorLeft > 750) {
                 Status.Count.leftCurves++;
                 Status.Steer.currState = LEFT;
             }
-            else if(sens_diff > GOOD_ZONE && ADC12_Data.SensorRight > 750) {
+            else if(ADC12_Data.SensorRight > 750) {
                 Status.Count.rightCurves++;
                 Status.Steer.currState = RIGHT;
             }
@@ -174,7 +228,7 @@ void AL_Algorithm()
             break;
 
         case LEFT:
-            if(sens_sum <= ADC12_Data.SensorFront + 200 && sens_diff > -GOOD_ZONE) {
+            if(sens_sum <= ADC12_Data.SensorFront + 300 && sens_diff > -GOOD_ZONE) {
                 Status.Steer.currState = FORWARD;
             }
             else {
@@ -183,7 +237,7 @@ void AL_Algorithm()
             break;
 
         case RIGHT:
-            if(sens_sum <= ADC12_Data.SensorFront + 200 && sens_diff < GOOD_ZONE) {
+            if(sens_sum <= ADC12_Data.SensorFront + 300 && sens_diff < GOOD_ZONE) {
                 Status.Steer.currState = FORWARD;
             }
             else {
@@ -199,7 +253,7 @@ void AL_Algorithm()
     Driver_SetSteering(steeringValue);
 
     if(Status.start) {
-           AL_SpeedControl();
+           AL_SpeedCalculation();
        }
        else {
            Driver_SetThrottle(0);

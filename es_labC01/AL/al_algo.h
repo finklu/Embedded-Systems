@@ -17,6 +17,9 @@ typedef struct {
         short align;
     }Steer;
     struct {
+        unsigned short throttleValue;
+    }throttle;
+    struct {
         unsigned short leftCurves;
         unsigned short rightCurves;
         unsigned short rounds;
@@ -33,7 +36,7 @@ typedef struct {
     struct {
         float kp, ki, kd, esum, ta;
         short e, eold, y, satLow, satUp;
-    } drive;
+    } throttle;
 } PIDParam_t;
 
 void AL_PARAMETER_Init();

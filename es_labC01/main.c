@@ -47,6 +47,9 @@ void main(void)
        AL_SensorDistances();
        AL_Algorithm();
    }
+   else {
+       Driver_SetThrottle(0);
+   }
 
 
 
