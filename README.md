@@ -91,3 +91,7 @@ Feel free to contribute by:
 ---
 
 Happy coding! 🚗✨
+
+# Introduction to team "Totalschaden"
+Meet Team Totalschaden from CrazyCar – where chaos meets the road! 🏎️💥 Our battle-scarred companion embodies resilience and humor, thriving against all odds. With every dent, crack, and misplaced traffic cone, we remind the world: it's not the destination, but the ride that counts! 🚦
+![file not loading, obviously](TeamTotalschadenLogo.jpg)
