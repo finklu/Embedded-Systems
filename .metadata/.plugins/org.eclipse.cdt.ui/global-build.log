@@ -19447,3 +19447,342 @@ Finished building target: "es_labC01.out"
  
 
 **** Build Finished ****
+
+**** Clean-only build of configuration Debug for project es_labC02 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "es_labC02.out" 
+DEL /F "main.obj" "AL\al_algo.obj" "AL\al_data.obj" "DL\driver_aktorik.obj" "DL\driver_general.obj" "DL\driver_lcd.obj" "HAL\hal_adc12.obj" "HAL\hal_dma.obj" "HAL\hal_general.obj" "HAL\hal_gpio.obj" "HAL\hal_pmm.obj" "HAL\hal_timerA.obj" "HAL\hal_timerB0.obj" "HAL\hal_ucs.obj" "HAL\hal_usciB1.obj" "HAL\hal_wdt.obj" 
+DEL /F "main.d" "AL\al_algo.d" "AL\al_data.d" "DL\driver_aktorik.d" "DL\driver_general.d" "DL\driver_lcd.d" "HAL\hal_adc12.d" "HAL\hal_dma.d" "HAL\hal_general.d" "HAL\hal_gpio.d" "HAL\hal_pmm.d" "HAL\hal_timerA.d" "HAL\hal_timerB0.d" "HAL\hal_ucs.d" "HAL\hal_usciB1.d" "HAL\hal_wdt.d" 
+C:\es_crazycar_workspace\es_labC02\Debug\es_labC02.out konnte nicht gefunden werden
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labC02 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../AL/al_data.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="AL/al_data.d_raw" --obj_directory="AL"  "../AL/al_data.c"
+"../AL/al_data.c", line 14: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_data.c", line 15: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+Finished building: "../AL/al_data.c"
+ 
+Building file: "../DL/driver_aktorik.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="DL/driver_aktorik.d_raw" --obj_directory="DL"  "../DL/driver_aktorik.c"
+"../DL/driver_aktorik.c", line 67: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../DL/driver_aktorik.c"
+ 
+Building file: "../DL/driver_general.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="DL/driver_general.d_raw" --obj_directory="DL"  "../DL/driver_general.c"
+Finished building: "../DL/driver_general.c"
+ 
+Building file: "../AL/al_algo.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="AL/al_algo.d_raw" --obj_directory="AL"  "../AL/al_algo.c"
+"../AL/al_algo.c", line 28: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 47: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 72: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 64: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 68: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 114: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 93: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 178: warning #225-D: function "Driver_LCD_WriteText" declared implicitly
+"../AL/al_algo.c", line 179: warning #225-D: function "Driver_LCD_WriteUInt" declared implicitly
+"../AL/al_algo.c", line 253: warning #225-D: function "Driver_SetSteering" declared implicitly
+"../AL/al_algo.c", line 259: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"C:/es_crazycar_workspace/es_labC02/HAL/hal_adc12.h", line 18: remark #1535-D: (ULP 8.1) variable "ADC12_Data" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AL/al_algo.c", line 15 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 16 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 17 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 18 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 19 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 30 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 31 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 32 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 33 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 34 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 42 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 45 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 46 (col. 67): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 47 (col. 92): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 66 (col. 29): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 67 (col. 76): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 68 (col. 104): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../AL/al_algo.c"
+ 
+Building file: "../DL/driver_lcd.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="DL/driver_lcd.d_raw" --obj_directory="DL"  "../DL/driver_lcd.c"
+"../DL/driver_lcd.c", line 13: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 15: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 31: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 34: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 40: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 43: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 52: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 66: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 77: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 83: remark #1540-D: (ULP 11.2) Assignment of higher bits (constants) to "PDOUT_H" within a loop. Recommend using lower 4 bits to allow use of constant generators
+"../DL/driver_lcd.c", line 85: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 101: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 105: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 108: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../DL/driver_lcd.c", line 117: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../DL/driver_lcd.c", line 134: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../DL/driver_lcd.c", line 134: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../DL/driver_lcd.c", line 135: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../DL/driver_lcd.c"
+ 
+Building file: "../HAL/hal_dma.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_dma.d_raw" --obj_directory="HAL"  "../HAL/hal_dma.c"
+"../HAL/hal_dma.c", line 20: warning #515-D: a value of type "volatile unsigned int *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../HAL/hal_dma.c", line 21: warning #515-D: a value of type "unsigned short *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"..\HAL\hal_adc12.h", line 18: remark #1535-D: (ULP 8.1) variable "ADC12_Data" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../HAL/hal_dma.c"
+ 
+Building file: "../HAL/hal_adc12.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_adc12.d_raw" --obj_directory="HAL"  "../HAL/hal_adc12.c"
+"..\HAL\hal_adc12.h", line 18: remark #1535-D: (ULP 8.1) variable "ADC12_Data" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../HAL/hal_adc12.c"
+ 
+Building file: "../HAL/hal_general.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_general.d_raw" --obj_directory="HAL"  "../HAL/hal_general.c"
+Finished building: "../HAL/hal_general.c"
+ 
+Building file: "../HAL/hal_gpio.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_gpio.d_raw" --obj_directory="HAL"  "../HAL/hal_gpio.c"
+"../HAL/hal_gpio.c", line 122: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../HAL/hal_gpio.c", line 129: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+Finished building: "../HAL/hal_gpio.c"
+ 
+Building file: "../HAL/hal_pmm.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_pmm.d_raw" --obj_directory="HAL"  "../HAL/hal_pmm.c"
+"../HAL/hal_pmm.c", line 91: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 100: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 115: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 122: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 127: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 163: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+"../HAL/hal_pmm.c", line 173: remark #1528-D: (ULP 3.1) Detected flag polling using PMMIFG. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_pmm.c"
+ 
+Building file: "../HAL/hal_timerA.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_timerA.d_raw" --obj_directory="HAL"  "../HAL/hal_timerA.c"
+Finished building: "../HAL/hal_timerA.c"
+ 
+Building file: "../HAL/hal_timerB0.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_timerB0.d_raw" --obj_directory="HAL"  "../HAL/hal_timerB0.c"
+Finished building: "../HAL/hal_timerB0.c"
+ 
+Building file: "../HAL/hal_ucs.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_ucs.d_raw" --obj_directory="HAL"  "../HAL/hal_ucs.c"
+"../HAL/hal_ucs.c", line 12: remark #1528-D: (ULP 3.1) Detected flag polling using SFRIFG1. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_ucs.c"
+ 
+Building file: "../HAL/hal_wdt.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_wdt.d_raw" --obj_directory="HAL"  "../HAL/hal_wdt.c"
+Finished building: "../HAL/hal_wdt.c"
+ 
+Building file: "../HAL/hal_usciB1.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="HAL/hal_usciB1.d_raw" --obj_directory="HAL"  "../HAL/hal_usciB1.c"
+"../HAL/hal_usciB1.c", line 32: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+Finished building: "../HAL/hal_usciB1.c"
+ 
+Building target: "es_labC02.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labC02.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labC02_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labC02.out" "./main.obj" "./AL/al_algo.obj" "./AL/al_data.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labC02.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labC02 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../AL/al_algo.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="AL/al_algo.d_raw" --obj_directory="AL"  "../AL/al_algo.c"
+"../AL/al_algo.c", line 28: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 29: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 48: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 73: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 65: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 69: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 115: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 94: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 179: warning #225-D: function "Driver_LCD_WriteText" declared implicitly
+"../AL/al_algo.c", line 180: warning #225-D: function "Driver_LCD_WriteUInt" declared implicitly
+"../AL/al_algo.c", line 254: warning #225-D: function "Driver_SetSteering" declared implicitly
+"../AL/al_algo.c", line 260: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"C:/es_crazycar_workspace/es_labC02/HAL/hal_adc12.h", line 18: remark #1535-D: (ULP 8.1) variable "ADC12_Data" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AL/al_algo.c", line 15 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 16 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 17 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 18 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 19 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 31 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 32 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 33 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 34 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 35 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 43 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 46 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 47 (col. 67): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 48 (col. 92): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 67 (col. 29): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 68 (col. 76): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 69 (col. 104): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../AL/al_algo.c"
+ 
+Building target: "es_labC02.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labC02.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labC02_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labC02.out" "./main.obj" "./AL/al_algo.obj" "./AL/al_data.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labC02.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labC02 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../AL/al_algo.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="AL/al_algo.d_raw" --obj_directory="AL"  "../AL/al_algo.c"
+"../AL/al_algo.c", line 28: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 29: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 48: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 73: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 65: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 69: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 104: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 94: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 168: warning #225-D: function "Driver_LCD_WriteText" declared implicitly
+"../AL/al_algo.c", line 169: warning #225-D: function "Driver_LCD_WriteUInt" declared implicitly
+"../AL/al_algo.c", line 242: warning #225-D: function "Driver_SetSteering" declared implicitly
+"C:/es_crazycar_workspace/es_labC02/HAL/hal_adc12.h", line 18: remark #1535-D: (ULP 8.1) variable "ADC12_Data" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AL/al_algo.c", line 15 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 16 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 17 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 18 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 19 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 31 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 32 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 33 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 34 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 35 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 43 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 46 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 47 (col. 67): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 48 (col. 92): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 67 (col. 29): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 68 (col. 76): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 69 (col. 104): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../AL/al_algo.c"
+ 
+Building target: "es_labC02.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labC02.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labC02_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labC02.out" "./main.obj" "./AL/al_algo.obj" "./AL/al_data.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labC02.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labC02 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../AL/al_algo.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1281/ccs/ccs_base/msp430/include" --include_path="C:/es_crazycar_workspace/es_labC02" --include_path="C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="AL/al_algo.d_raw" --obj_directory="AL"  "../AL/al_algo.c"
+"../AL/al_algo.c", line 28: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 29: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../AL/al_algo.c", line 48: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 73: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 65: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 69: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 104: warning #225-D: function "Driver_SetThrottle" declared implicitly
+"../AL/al_algo.c", line 94: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 168: warning #225-D: function "Driver_LCD_WriteText" declared implicitly
+"../AL/al_algo.c", line 169: warning #225-D: function "Driver_LCD_WriteUInt" declared implicitly
+"../AL/al_algo.c", line 242: warning #225-D: function "Driver_SetSteering" declared implicitly
+"C:/es_crazycar_workspace/es_labC02/HAL/hal_adc12.h", line 18: remark #1535-D: (ULP 8.1) variable "ADC12_Data" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../AL/al_algo.c", line 15 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 16 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 17 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 18 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 19 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 31 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 32 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 33 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 34 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 35 (col. 28): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 43 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 46 (col. 25): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 47 (col. 67): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 48 (col. 92): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 67 (col. 29): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 68 (col. 76): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../AL/al_algo.c", line 69 (col. 104): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../AL/al_algo.c"
+ 
+Building target: "es_labC02.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5335__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"es_labC02.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1281/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1281/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"C:/ti/ccs1281/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="es_labC02_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "es_labC02.out" "./main.obj" "./AL/al_algo.obj" "./AL/al_data.obj" "./DL/driver_aktorik.obj" "./DL/driver_general.obj" "./DL/driver_lcd.obj" "./HAL/hal_adc12.obj" "./HAL/hal_dma.obj" "./HAL/hal_general.obj" "./HAL/hal_gpio.obj" "./HAL/hal_pmm.obj" "./HAL/hal_timerA.obj" "./HAL/hal_timerB0.obj" "./HAL/hal_ucs.obj" "./HAL/hal_usciB1.obj" "./HAL/hal_wdt.obj" "../lnk_msp430f5335.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port E in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "es_labC02.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project es_labC02 ****
+
+"C:\\ti\\ccs1281\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'es_labC02.out' is up to date.
+
+**** Build Finished ****
