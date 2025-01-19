@@ -2,21 +2,24 @@
 #include "al_algo.h"
 #include "HAL/hal_adc12.h"
 #include "HAL/hal_timerA.h"
+#include "DL/driver_aktorik.h"
+#include "DL/driver_lcd.h"
 
 extern ADC12Com ADC12_Data;
 extern hallMeasurement Measure_Hall_Data;
 PIDParam_t parameters;
 Status_t Status;
 
-short steeringValue = 0;
+signed char steeringValue = 0;
 
 void AL_PARAMETER_Init()
 {
     parameters.steer.kp = 0.09;
     parameters.steer.ki = 0;
-    parameters.steer.kd = 0.05;
+    parameters.steer.kd = 0.0001;
     parameters.steer.esum = 0;
     parameters.steer.ta = 0.01;
+
     parameters.steer.satLow = -100;
     parameters.steer.satUp = 100;
 
@@ -37,7 +40,7 @@ void AL_PARAMETER_Init()
 
 void AL_SteerControl()
 {
-    parameters.steer.e = ADC12_Data.SensorRight - ADC12_Data.SensorLeft + Status.Steer.align;
+    parameters.steer.e = ADC12_Data.SensorRight - ADC12_Data.SensorLeft /*+ Status.Steer.align*/;
      if ((parameters.steer.y >parameters.steer.satLow) && (parameters.steer.y <parameters.steer.satUp))
      {
        parameters.steer.esum += parameters.steer.e;
@@ -45,7 +48,7 @@ void AL_SteerControl()
 
    parameters.steer.y = (parameters.steer.kp *parameters.steer.e);                                               // P-Anteil
    parameters.steer.y += parameters.steer.ki *parameters.steer.ta *parameters.steer.esum;                         // I-Anteil
-   parameters.steer.y += parameters.steer.kd * (parameters.steer.e -parameters.steer.eold) /parameters.steer.ta;  // D-Anteil
+   parameters.steer.y += parameters.steer.kd * (parameters.steer.e -parameters.steer.eold)/parameters.steer.ta;  // D-Anteil
 
    parameters.steer.eold =parameters.steer.e;
 
@@ -79,28 +82,35 @@ void AL_SpeedCalculation()
 
     switch(Status.Steer.currState) {
     case FORWARD:
-
         if(ADC12_Data.SensorFront>=1500)
-        {
-            Status.throttle.throttleValue = 65;
-        }
-        else if(ADC12_Data.SensorFront < 1500 && ADC12_Data.SensorFront > 800)
-        {
-            Status.throttle.throttleValue = 55;
-        }
-        else if(ADC12_Data.SensorFront <= 800)
-        {
-            //Status.throttle.throttleValue = 40;
-            Status.throttle.throttleValue = 40 - ADC12_Data.SensorFront / 200;
-        }
+                {
+                    Status.throttle.throttleValue = 65;
+                }
+                else if(ADC12_Data.SensorFront < 1500 && ADC12_Data.SensorFront > 800)
+                {
+                    Status.throttle.throttleValue = 50;
+                }
+                else if(ADC12_Data.SensorFront <= 800)
+                {
+                    //Status.throttle.throttleValue = 40;
+                    Status.throttle.throttleValue = 40 - ADC12_Data.SensorFront / 200;
+                }
         break;
+
     case LEFT:
-        Status.throttle.throttleValue = 45;
+        Status.throttle.throttleValue = 38;
         break;
+
     case RIGHT:
-        Status.throttle.throttleValue = 45;
+        Status.throttle.throttleValue = 38;
+        break;
+
+    case DEADLOCK:
+        Status.throttle.throttleValue = -40;
         break;
     }
+
+
     Driver_SetThrottle(Status.throttle.throttleValue);
 
 
@@ -161,9 +171,6 @@ void AL_CalculateAlignment()
 
 void AL_ShowDisplay()
 {
-
-    if(ADC12_Data.Status.B.ADCrdy == 1 && Status.refreshRate == 120)
-       {
             ADC12_Data.Status.B.ADCrdy = 0;
             Driver_LCD_WriteText("v in mm/s =",12,0,0);
             Driver_LCD_WriteUInt(Measure_Hall_Data.speed,0,90);
@@ -180,15 +187,8 @@ void AL_ShowDisplay()
             Driver_LCD_WriteText("VBat in mV=",12,5,0);
             Driver_LCD_WriteUInt(ADC12_Data.ADCBuffer[3],5,70);
 
-            Driver_LCD_WriteText("Kurve=",12,6,0);
-            Driver_LCD_WriteUInt(Status.Steer.currCurve,6,70);
-
-            Status.refreshRate = 0;
-       }
-       else {
-           Status.refreshRate++;
-       }
-
+            Driver_LCD_WriteText("Kurve=",12,7,0);
+            Driver_LCD_WriteUInt(Status.Steer.currCurve,7,70);
 }
 
 
@@ -202,12 +202,11 @@ void AL_Algorithm()
 
     switch(Status.Steer.currState) {
         case FORWARD:
-
-           if(ADC12_Data.SensorLeft > 750) {
+           if(ADC12_Data.SensorLeft >= 750) {
                 Status.Count.leftCurves++;
                 Status.Steer.currState = LEFT;
             }
-            else if(ADC12_Data.SensorRight > 750) {
+            else if(ADC12_Data.SensorRight >= 750) {
                 Status.Count.rightCurves++;
                 Status.Steer.currState = RIGHT;
             }
@@ -217,31 +216,66 @@ void AL_Algorithm()
             break;
 
         case LEFT:
-            if(sens_sum <= ADC12_Data.SensorFront + 250 && sens_diff > -GOOD_ZONE) {
+            Status.Steer.lastSteer = STEER_LEFT;
+            if(sens_sum <= ADC12_Data.SensorFront + 200 && sens_diff > -GOOD_ZONE) {
                 Status.Steer.currState = FORWARD;
             }
             else {
                 steeringValue = STEER_LEFT;
+
             }
             break;
 
         case RIGHT:
-            if(sens_sum <= ADC12_Data.SensorFront + 250 && sens_diff < GOOD_ZONE) {
+            Status.Steer.lastSteer = STEER_RIGHT;
+            if(sens_sum <= ADC12_Data.SensorFront + 200 && sens_diff < GOOD_ZONE) {
                 Status.Steer.currState = FORWARD;
             }
             else {
                 steeringValue = STEER_RIGHT;
+
             }
             break;
+
+        case DEADLOCK:
+
+            if (Status.Steer.deadlockTimer < 90) // 1.5sec backwards (90 cycles / 60Hz algo)
+             {
+               steeringValue = Status.Steer.lastSteer;
+               Status.Steer.deadlockTimer++;
+             }
+             else
+              {
+               Status.Steer.currState = FORWARD;
+               Status.Steer.deadlockCounter = 0;
+              }
+            break;
+
+
     }
+
+// ####### DEADLOCK ABFRAGE  ######
+    if (ADC12_Data.SensorFront <= 10)
+    {
+      Status.Steer.deadlockCounter++;
+      if (Status.Steer.deadlockCounter >= 90)      // 1.5sec in deadlock (90 cycles / 60Hz algo)
+       {
+         Status.Steer.currState = DEADLOCK;
+         Status.Steer.deadlockTimer = 0;
+       }
+    }
+     else
+        {
+         Status.Steer.deadlockCounter = 0;
+        }
+// ##################################
+
+    Driver_SetSteering(steeringValue);
+    AL_SpeedCalculation();
+
 
     AL_DetermineCurve();
     AL_CalculateAlignment();
-
-
-    Driver_SetSteering(steeringValue);
-
-    AL_SpeedCalculation();
     AL_ShowDisplay();
 }
 

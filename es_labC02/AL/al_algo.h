@@ -13,11 +13,14 @@ enum curves{C1, C2, C3, C4, C5, C6, C7, C8};
 typedef struct {
     struct {
         unsigned short currState;
+        short lastSteer;
         unsigned short currCurve;
         short align;
+        unsigned short deadlockTimer;
+        unsigned short deadlockCounter;
     }Steer;
     struct {
-        unsigned short throttleValue;
+        short throttleValue;
     }throttle;
     struct {
         unsigned short leftCurves;

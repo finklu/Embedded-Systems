@@ -48,9 +48,9 @@ void HAL_TimerA_Init(void)
 
   TA2CCTL0 |= CCIE;                         //enable interrupts
 
-  TA2CCR0 = 25000;                          //100Hz
+  TA2CCR0 = 41667;                          //60Hz
 
-  TA2CTL |= MC_2 + TACLR;                   //up-mode selected + start timer
+  TA2CTL |= MC_1 ;                         //up-mode selected
 
 }
 
@@ -85,9 +85,5 @@ __interrupt void TimerA0_CCR0(void)
 #pragma vector = TIMER2_A0_VECTOR
 __interrupt void TimerA2_CCR0(void)
 {
-    if(TA2CCTL0 & CCIFG)
-    {
-        Status.algorithmusTimer = 1;
-        TA2CCTL0 &= ~CCIFG;
-    }
+    Status.algorithmusTimer = 1;
 }

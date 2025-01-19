@@ -24,20 +24,20 @@ void main(void)
 
   while(1)
   {
-   if(Status.algorithmusTimer)
+   if(Status.algorithmusTimer == 1 && ADC12_Data.Status.B.ADCrdy == 1)
+   {
+    Status.algorithmusTimer = 0;
+
+    if(Status.start == 1)
     {
-      Status.algorithmusTimer = 0;
-      if(Status.start == 1 && ADC12_Data.Status.B.ADCrdy == 1)
-      {
        AL_SensorDistances();
        AL_Algorithm();
-      }
-       else
-       {
-        Driver_SetThrottle(0);
-       }
-
     }
+    else
+      {
+       Driver_SetThrottle(0);
+      }
+   }
   }
 }
 
