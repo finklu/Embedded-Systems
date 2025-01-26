@@ -60,7 +60,7 @@ __interrupt void TimerA0_CCR2(void)
     if(TA0CCTL2 & CCIFG)
     {
         hall_ticks++;
-        Measure_Hall_Data.distance++;
+        Measure_Hall_Data.distance += TICK_DISTANCE;
         TA0CCTL2 &= ~CCIFG;
     }
 }

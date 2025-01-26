@@ -10,6 +10,7 @@
 #include "AL/al_data.h"
 
 
+
 extern ButtonCom CCButton;
 extern ADC12Com ADC12_Data;
 extern PIDParam_t parameters;
@@ -24,7 +25,7 @@ void main(void)
 
   while(1)
   {
-   if(Status.algorithmusTimer == 1 && ADC12_Data.Status.B.ADCrdy == 1)
+   if(Status.algorithmusTimer == 1)
    {
     Status.algorithmusTimer = 0;
     if(Status.start == 1)

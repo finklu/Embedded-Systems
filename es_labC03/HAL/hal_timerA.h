@@ -8,7 +8,7 @@
 
 typedef struct
 {
-    volatile int32_t distance;
+    volatile unsigned long long int distance;
     volatile int32_t speed;
 }hallMeasurement;
 

@@ -3,14 +3,10 @@
 
 #include <stdint.h>
 
-enum states{FORWARD, LEFT, RIGHT, DEADLOCK};
+enum states{FORWARD, LEFT, RIGHT, BACKWARDS};
 enum curves{C1, C2, C3, C4, C5, C6, C7, C8};
 
-#define STEER_RIGHT 85
-#define STEER_LEFT -85
-#define SPEED_FORWARD 60
-#define SPEED_CURVE 40
-#define GOOD_ZONE 450
+#define GOOD_ZONE 400
 
 typedef struct {
     struct {
@@ -21,9 +17,6 @@ typedef struct {
         unsigned short deadlockTimer;
         unsigned short deadlockCounter;
     }Steer;
-    struct {
-        short throttleValue;
-    }throttle;
     struct {
         unsigned short leftCurves;
         unsigned short rightCurves;
@@ -37,13 +30,10 @@ typedef struct {
 typedef struct {
     struct {
         float kp, kd, fa;
-        int e, eold, y;
-        short satLow, satUp;
+        short e, eold;
+        signed short y;
+        signed short satLow, satUp;
     } steer;
-    struct {
-        float kp, ki, kd, esum, ta;
-        short e, eold, y, satLow, satUp;
-    } throttle;
 } PIDParam_t;
 
 void AL_PARAMETER_Init();
