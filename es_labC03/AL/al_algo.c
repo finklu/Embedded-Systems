@@ -11,7 +11,7 @@
 #define STEER_RIGHT             85
 
 //----- SPEED PARAMETER ------
-#define SPEED_SUPERFAST         85
+#define SPEED_SUPERFAST         80
 #define SPEED_FAST              70
 #define SPEED_MEDIUM            60
 #define SPEED_SLOW              55
@@ -35,7 +35,7 @@
 #define CURRSPEED_FAST         1700
 
 //----- RICHTUNG ------
-#define CW 0
+#define CW 1
 
 extern ADC12Com ADC12_Data;
 extern hallMeasurement Measure_Hall_Data;
@@ -90,6 +90,7 @@ void AL_SpeedCalculation()
 {
     switch(Status.Steer.currState) {
         case FORWARD:
+            /*
             if (ADC12_Data.SensorFront <= DISTANCE_MEDIUM) {
                 if (Measure_Hall_Data.speed > CURRSPEED_FAST) {
                     throttleValue = SPEED_MEDIUM_BREMSEN;
@@ -98,8 +99,8 @@ void AL_SpeedCalculation()
                     throttleValue = SPEED_MEDIUM;
                 }
             }
-
-            else if (ADC12_Data.SensorFront <= DISTANCE_FAR) {
+*/
+            if (ADC12_Data.SensorFront <= DISTANCE_FAR) {
                 throttleValue = SPEED_FAST;
             }
             else {
@@ -109,7 +110,7 @@ void AL_SpeedCalculation()
 
         case LEFT:
             if (Measure_Hall_Data.speed > CURRSPEED_SLOW) {
-              throttleValue = SPEED_KAUM_BREMSEN;
+              throttleValue = SPEED_MEDIUM_BREMSEN;
             }
             else {
               throttleValue = SPEED_CURVE;
@@ -120,7 +121,7 @@ void AL_SpeedCalculation()
 
         case RIGHT:
             if (Measure_Hall_Data.speed > CURRSPEED_SLOW) {
-              throttleValue = SPEED_KAUM_BREMSEN;
+              throttleValue = SPEED_MEDIUM_BREMSEN;
             }
             else {
               throttleValue = SPEED_CURVE;
@@ -146,6 +147,7 @@ void AL_Algorithm()
 
     short sens_diff = ADC12_Data.SensorRight - ADC12_Data.SensorLeft;
     short sens_sum = ADC12_Data.SensorRight + ADC12_Data.SensorLeft;
+    short sens_cw_sum = ADC12_Data.SensorFront + ADC12_Data.SensorRight;
 
     switch(Status.Steer.currState)
     {
@@ -164,7 +166,7 @@ void AL_Algorithm()
         case LEFT:
 
             Status.Steer.lastSteer = STEER_LEFT;
-            if(sens_sum <= ADC12_Data.SensorFront + 200 && sens_diff > -GOOD_ZONE) {
+            if(sens_sum <= ADC12_Data.SensorFront && sens_diff > -GOOD_ZONE) {
                 Measure_Hall_Data.distance = 0;
                 Status.Steer.currState = FORWARD;
             }
@@ -177,11 +179,11 @@ void AL_Algorithm()
         case RIGHT:
 
             Status.Steer.lastSteer = STEER_RIGHT;
-            if(sens_sum <= ADC12_Data.SensorFront + 200 && sens_diff < GOOD_ZONE){//} || Measure_Hall_Data.distance >= DISTANCE_IN_KURVE_MAX) {
+            if(sens_sum <= ADC12_Data.SensorFront && sens_diff < GOOD_ZONE){//} || Measure_Hall_Data.distance >= DISTANCE_IN_KURVE_MAX) {
                 Measure_Hall_Data.distance = 0;
                 Status.Steer.currState = FORWARD;
             }
-            else if(CW == 1 && ADC12_Data.SensorRight <= 100){
+            else if(CW == 1 && ADC12_Data.SensorFront <= 100 && ADC12_Data.SensorLeft >= 700){
                 Status.Steer.currState = FORWARD;
             }
             else
