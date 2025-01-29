@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-enum states{FORWARD, LEFT, RIGHT, BACKWARDS};
+enum states{FORWARD, LEFT, RIGHT, BACKWARDS, TODESKREISEL};
 enum curves{C1, C2, C3, C4, C5, C6, C7, C8};
 
 #define GOOD_ZONE 400
