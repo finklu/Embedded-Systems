@@ -16,7 +16,7 @@
 #define SPEED_MEDIUM            60
 #define SPEED_SLOW              55
 #define SPEED_CURVE             55
-#define SPEED_BACKWARDS         -60
+#define SPEED_BACKWARDS         -67
 #define SPEED_STARK_BREMSEN     -30
 #define SPEED_MEDIUM_BREMSEN    -15
 #define SPEED_KAUM_BREMSEN      -10
@@ -212,7 +212,7 @@ void AL_Algorithm()
         case BACKWARDS:
 
             steeringValue = Status.Steer.lastSteer;
-            if(ADC12_Data.SensorFront >= 1000)
+            if(ADC12_Data.SensorFront >= 1300)
             {
                 Status.Steer.currState = FORWARD;
             }
@@ -228,7 +228,7 @@ void AL_Algorithm()
 
     }
 
-    if(mm_after_curve >= 4500)
+    if(mm_after_curve >= 3500)
     {
         Status.Count.rightCurves = 0;
     }
@@ -239,7 +239,7 @@ void AL_Algorithm()
     if (ADC12_Data.SensorFront <= 30)
         {
           Status.Steer.deadlockCounter++;
-          if (Status.Steer.deadlockCounter >= 30)
+          if (Status.Steer.deadlockCounter >= 10)
            {
              Status.Steer.currState = BACKWARDS;
              Status.Steer.deadlockTimer = 0;
